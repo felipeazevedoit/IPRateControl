@@ -2,6 +2,7 @@ using RateLimiterPro.Application.Interfaces;
 using RateLimiterPro.Application.Services;
 using RateLimiterPro.Domain.Repositories;
 using RateLimiterPro.Domain.Interfaces;
+using RateLimiterPro.Infrastructure.Queue;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,7 @@ builder.Services.AddScoped<IIPRecordRepository, IPRecordRepository>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<AsyncRequestQueue>();
 
 var app = builder.Build();
 

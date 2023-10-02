@@ -5,11 +5,11 @@ namespace RateLimiterPro.Application.Services
 {
     public class RequestInfoService : IRequestInfoService
     {
-        private readonly List<RequestModel> mockRequests = new List<Request>
+        private readonly List<RequestModel> mockRequests = new()
         {
-            new RequestModel { Id = 1, ReceivedTime = "12:00:10", ProcessedTime = "12:00:15" },
-            new RequestModel { Id = 2, ReceivedTime = "12:01:20", ProcessedTime = "12:01:25" },
-            new RequestModel { Id = 3, ReceivedTime = "12:02:30", ProcessedTime = "12:02:35" }
+            new RequestModel { Id = 1, ReceivedTime = DateTime.Now.AddMinutes(-5), ProcessedTime =  DateTime.Now.AddMinutes(1) },
+            new RequestModel { Id = 2, ReceivedTime = DateTime.Now.AddMinutes(-11), ProcessedTime = DateTime.Now.AddMinutes(1) },
+            new RequestModel { Id = 3, ReceivedTime = DateTime.Now.AddMinutes(-15), ProcessedTime = DateTime.Now.AddMinutes(1) }
         };
 
         public IEnumerable<RequestModel> GetRequestInfo()

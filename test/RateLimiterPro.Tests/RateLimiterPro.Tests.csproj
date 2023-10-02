@@ -23,9 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ApplicationTests\" />
-    <Folder Include="InfrastructureTests\" />
-    <Folder Include="DomainTests\" />
+    <ProjectReference Include="..\..\src\IPRateControl\RateLimiterPro.Application\RateLimiterPro.Application.csproj" />
+    <ProjectReference Include="..\..\src\IPRateControl\RateLimiterPro.Domain\RateLimiterPro.Domain.csproj" />
   </ItemGroup>
 
 </Project>

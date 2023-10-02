@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RateLimiterPro.Application.Interfaces;
+using RateLimiterPro.Domain.Models;
 
 namespace RateLimiterPro.API.Controllers
 {
@@ -31,7 +33,7 @@ namespace RateLimiterPro.API.Controllers
         }
 
         [HttpPost("enqueueRequest")]
-        public IActionResult EnqueueRequest([FromBody] Request request)
+        public IActionResult EnqueueRequest([FromBody] RequestModel request)
         {
             if (request is null) return BadRequest("Invalid request data");
             
