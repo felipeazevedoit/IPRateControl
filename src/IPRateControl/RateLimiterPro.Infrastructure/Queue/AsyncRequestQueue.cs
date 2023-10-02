@@ -12,7 +12,7 @@ namespace RateLimiterPro.Infrastructure.Queue
             requestQueue.Enqueue(request);
             await semaphore.WaitAsync();
 
-            public async Task<RequestModel> DequeueRequestAsync()
+            async Task<RequestModel> DequeueRequestAsync()
             {
                 if (requestQueue.TryDequeue(out var request))
                 {
@@ -22,10 +22,17 @@ namespace RateLimiterPro.Infrastructure.Queue
                 return null;
             }
 
-            public void ReleaseSlot()
+            void ReleaseSlot()
             {
                 semaphore.Release();
             }
+        }
+        public RequestModel? DequeueRequest()
+        {
+            if (requestQueue.TryDequeue(out var request))
+                return request;
+
+            return null;
         }
     }
 }
