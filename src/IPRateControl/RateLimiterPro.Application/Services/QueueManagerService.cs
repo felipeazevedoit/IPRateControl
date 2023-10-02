@@ -15,11 +15,9 @@ namespace RateLimiterPro.Application.Services
 
         public async Task EnqueueRequestAsync(RequestModel request)
         {
-            if (request == null)
-            {
+            if (request is null)
                 throw new ArgumentNullException(nameof(request));
-            }
-
+   
             try
             {
                 await requestQueue.EnqueueRequestAsync(request);
