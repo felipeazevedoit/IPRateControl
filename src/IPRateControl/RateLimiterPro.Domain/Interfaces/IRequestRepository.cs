@@ -4,9 +4,9 @@ namespace RateLimiterPro.Domain.Interfaces
 {
     public interface IRequestRepository
     {
-        Request Add(Request request);
-        Request GetById(int id);
-        IEnumerable<Request> GetByIpAddress(string ipAddress);
-        void Update(Request request);
+        RequestModel Add(RequestModel request);
+        RequestModel GetById(int id);
+        IEnumerable<RequestModel> GetByIpAddress(string ipAddress);
+        void Update(RequestModel request);
     }
 }

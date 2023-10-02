@@ -1,6 +1,6 @@
 ﻿namespace RateLimiterPro.Domain.Models
 {
-    public class Request
+    public class RequestModel
     {
         public int Id { get; set; } 
         public string IpAddress { get; set; } 

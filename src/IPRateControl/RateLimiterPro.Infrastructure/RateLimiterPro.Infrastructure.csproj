@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
     <Folder Include="Queue\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RateLimiterPro.Domain\RateLimiterPro.Domain.csproj" />
   </ItemGroup>
 
 </Project>

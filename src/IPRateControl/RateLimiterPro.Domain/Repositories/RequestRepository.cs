@@ -10,27 +10,27 @@ namespace RateLimiterPro.Domain.Repositories
 {
     public class RequestRepository : IRequestRepository
     {
-        private List<Request> requestStore = new List<Request>();
+        private List<RequestModel> requestStore = new List<RequestModel>();
         private int nextId = 1;
 
-        public Request Add(Request request)
+        public RequestModel Add(RequestModel request)
         {
             request.Id = nextId++;
             requestStore.Add(request);
             return request;
         }
 
-        public Request GetById(int id)
+        public RequestModel GetById(int id)
         {
             return requestStore.Find(request => request.Id == id);
         }
 
-        public IEnumerable<Request> GetByIpAddress(string ipAddress)
+        public IEnumerable<RequestModel> GetByIpAddress(string ipAddress)
         {
             return requestStore.FindAll(request => request.IpAddress == ipAddress);
         }
 
-        public void Update(Request request)
+        public void Update(RequestModel request)
         {
             // Implementar lógica para atualização, se necessário
         }
