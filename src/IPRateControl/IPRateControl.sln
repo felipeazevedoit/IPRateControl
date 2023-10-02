@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{6705C4F5-7952-49E5-8C8E-B92ABA1218A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimiterPro.Application", "RateLimiterPro.Application\RateLimiterPro.Application.csproj", "{74291FCC-6882-4912-97AB-EA779D662111}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{97499CFA-2663-4561-8B4C-4540500BA378}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimiterPro.Domain", "RateLimiterPro.Domain\RateLimiterPro.Domain.csproj", "{C9A37A22-4AA9-4792-9142-CE4E4A8BB68A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Infrastructure", "2 - Infrastructure", "{2B660517-5A34-48FE-9044-BCCB36AC423A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimiterPro.Infrastructure", "RateLimiterPro.Infrastructure\RateLimiterPro.Infrastructure.csproj", "{16AAC608-FA47-4103-86AA-36B0112F41A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Apresentation", "0 - Apresentation", "{E4381CEB-B858-48CC-911E-9151F1727318}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Test", "4 - Test", "{178DB86C-5EE8-4DB5-8AE4-7ADD53284081}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimiterPro.Tests", "..\..\test\RateLimiterPro.Tests\RateLimiterPro.Tests.csproj", "{360F6532-36A0-4376-ACCB-A60019B899A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimiterPro.API", "RateLimiterPro.API\RateLimiterPro.API.csproj", "{D54A6F12-6A61-48CA-95DC-6CB0A7AADA23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74291FCC-6882-4912-97AB-EA779D662111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74291FCC-6882-4912-97AB-EA779D662111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74291FCC-6882-4912-97AB-EA779D662111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74291FCC-6882-4912-97AB-EA779D662111}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A37A22-4AA9-4792-9142-CE4E4A8BB68A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A37A22-4AA9-4792-9142-CE4E4A8BB68A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A37A22-4AA9-4792-9142-CE4E4A8BB68A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A37A22-4AA9-4792-9142-CE4E4A8BB68A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16AAC608-FA47-4103-86AA-36B0112F41A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16AAC608-FA47-4103-86AA-36B0112F41A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16AAC608-FA47-4103-86AA-36B0112F41A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16AAC608-FA47-4103-86AA-36B0112F41A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{360F6532-36A0-4376-ACCB-A60019B899A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{360F6532-36A0-4376-ACCB-A60019B899A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{360F6532-36A0-4376-ACCB-A60019B899A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{360F6532-36A0-4376-ACCB-A60019B899A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54A6F12-6A61-48CA-95DC-6CB0A7AADA23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54A6F12-6A61-48CA-95DC-6CB0A7AADA23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54A6F12-6A61-48CA-95DC-6CB0A7AADA23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54A6F12-6A61-48CA-95DC-6CB0A7AADA23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{74291FCC-6882-4912-97AB-EA779D662111} = {6705C4F5-7952-49E5-8C8E-B92ABA1218A0}
+		{C9A37A22-4AA9-4792-9142-CE4E4A8BB68A} = {97499CFA-2663-4561-8B4C-4540500BA378}
+		{16AAC608-FA47-4103-86AA-36B0112F41A9} = {2B660517-5A34-48FE-9044-BCCB36AC423A}
+		{360F6532-36A0-4376-ACCB-A60019B899A7} = {178DB86C-5EE8-4DB5-8AE4-7ADD53284081}
+		{D54A6F12-6A61-48CA-95DC-6CB0A7AADA23} = {E4381CEB-B858-48CC-911E-9151F1727318}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8D60C5F-BFD3-4912-87CC-EBDBA36A76FF}
+	EndGlobalSection
+EndGlobal
