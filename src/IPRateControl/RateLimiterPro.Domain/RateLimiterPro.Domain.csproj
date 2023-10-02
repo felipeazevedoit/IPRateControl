@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
     <Folder Include="InMemoryRequestRepository\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
